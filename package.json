@@ -1,0 +1,38 @@
+{
+  "name": "obniz-sdk",
+  "version": "0.1.0",
+  "description": "The obniz controller for client.",
+  "main": "dist/bundle.js",
+  "types": "dist/typings/index.d.ts",
+  "repository": "https://github.com/yutaroyoshikawa/obniz-sdk",
+  "author": "yutaroyoshikawa",
+  "license": "MIT",
+  "private": false,
+  "dependencies": {},
+  "scripts": {
+    "build": "npx webpack",
+    "lint": "yarn run tsc && yarn run tslint",
+    "tslint": "npx tslint --project tsconfig.json",
+    "tslint-fix": "npx tslint --fix --project tsconfig.json",
+    "test": "npx jest"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.4.0",
+    "@babel/preset-env": "^7.4.1",
+    "@types/jest": "^24.0.11",
+    "@types/webpack": "^4.4.26",
+    "babel-loader": "^8.0.5",
+    "jest": "^24.5.0",
+    "prettier": "^1.16.4",
+    "ts-jest": "^24.0.0",
+    "ts-loader": "^5.3.3",
+    "tslint": "^5.14.0",
+    "tslint-config-prettier": "^1.18.0",
+    "tslint-config-standard": "^8.0.1",
+    "tslint-loader": "^3.5.4",
+    "tslint-plugin-prettier": "^2.0.1",
+    "typescript": "^3.3.4000",
+    "webpack": "^4.29.6",
+    "webpack-cli": "^3.3.0"
+  }
+}

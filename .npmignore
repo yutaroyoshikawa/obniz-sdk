@@ -3,3 +3,6 @@ tsconfig.json
 tslint.json
 test/
 src/
+jest.config.js
+webpack.config.js
+.babelrc

@@ -4,7 +4,7 @@ module.exports = {
   mode: process.env.NODE_ENV || "development",
   entry: "./src/index.ts",
   output: {
-    filename: "bundle.js",
+    filename: "index.js",
     path: __dirname + "/dist"
   },
   resolve: {
@@ -31,7 +31,7 @@ module.exports = {
     ]
   },
   devServer: {
-    contentBase: path.join(__dirname, 'src'),
+    contentBase: path.join(__dirname, 'dev'),
     compress: true,
     // port: 3000,
     open: true,

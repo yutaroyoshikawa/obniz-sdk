@@ -1,3 +1,5 @@
+var path = require('path');
+
 module.exports = {
   mode: process.env.NODE_ENV || "development",
   entry: "./src/index.ts",
@@ -27,5 +29,12 @@ module.exports = {
         exclude: /node_modules/
       }
     ]
+  },
+  devServer: {
+    contentBase: path.join(__dirname, 'src'),
+    compress: true,
+    // port: 3000,
+    open: true,
+    overlay: true,
   },
 };

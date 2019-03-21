@@ -7,3 +7,4 @@ jest.config.js
 webpack.config.js
 .babelrc
 .github
+dev/

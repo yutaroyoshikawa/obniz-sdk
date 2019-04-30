@@ -19,7 +19,7 @@ obniz
 
 インスタンスを生成するときの引数に任意のobniz idを入力してください。
 
-## 接続解除 - ***obniz.disconnect()***
+## 接続解除 - ***obniz.disConnect()***
 
 obniz-sdkを使って接続されたobnizを切断するには下記のようにします。
 
@@ -32,8 +32,8 @@ obniz
   .connect()
   .then(() => {
     obniz
-      .disconnect()
-      .then(() => console.log('disconnected'))
+      .disConnect()
+      .then(() => console.log('disConnected'))
       .catch(e => console.log(e))
   })
   .catch(e => console.log(e))
@@ -48,11 +48,11 @@ const obniz = new ObnizSDK('0000-0000')
 
 const init = async () => {
   await obniz.connect()
-  await obniz.disconnected()
+  await obniz.disConnected()
 }
 
 init()
-  .then(() => console.log('disconnected'))
+  .then(() => console.log('disConnected'))
   .catch(e => console.log(e))
 ```
 
